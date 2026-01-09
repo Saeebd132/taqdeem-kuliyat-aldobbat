@@ -104,9 +104,18 @@ cursor:pointer;
 <label>19- وش معنى شرف الخدمة</label><textarea></textarea>
 
 <button type="button" onclick="sendForm()">إرسال الطلب</button>
+<p id="success" style="display:none;color:#00ff99;font-size:18px;text-align:center;margin-top:15px;">
+✅ تم إرسال طلبك بنجاح
+</p>
 
 </form>
-
+<script>
+function sendForm(){
+document.getElementById("success").style.display = "block";
+window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+}
+</script>
 </body>
 </html>
+
 
