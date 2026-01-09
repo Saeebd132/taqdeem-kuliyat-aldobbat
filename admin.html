@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>دخول المسؤولين</title>
+<style>
+body{
+font-family:Arial;
+background:#0f2027;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+.box{
+background:#0b1320;
+padding:30px;
+border-radius:10px;
+width:350px;
+text-align:center;
+}
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:none;
+}
+button{
+width:100%;
+padding:12px;
+background:#4f6cff;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h2>دخول المسؤولين</h2>
+<input id="user" placeholder="اسم المستخدم">
+<input id="pass" type="password" placeholder="الرمز السري">
+<button onclick="login()">دخول</button>
+<p id="msg"></p>
+</div>
+
+<script>
+function login(){
+const pass = document.getElementById("pass").value;
+if(pass === "black 832"){
+window.location.href="dashboard.html";
+}else{
+document.getElementById("msg").innerText="❌ رمز غير صحيح";
+}
+}
+</script>
+
+</body>
+</html>
