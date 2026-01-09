@@ -2,26 +2,49 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>نموذج التقديم</title>
+<title>نموذج تقديم كلية الضباط</title>
+
 <style>
 body{
+margin:0;
 font-family:Arial;
-background:linear-gradient(135deg,#1e3c72,#2a5298);
+
+/* الخلفية */
+background:
+linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+url("bg.jpg") no-repeat center center fixed;
+
+background-size:cover;
 color:white;
-padding:20px;
+padding:30px;
 }
+
+/* صندوق النموذج */
 form{
 max-width:850px;
 margin:auto;
 background:rgba(11,19,32,0.95);
 padding:30px;
-border-radius:12px;
+border-radius:15px;
 }
+
+/* الشعار */
+.logo{
+text-align:center;
+margin-bottom:20px;
+}
+.logo img{
+width:120px;
+}
+
+/* العناوين */
 label{
 display:block;
 margin-top:15px;
 font-weight:bold;
 }
+
+/* الخانات */
 input, textarea{
 width:100%;
 margin-top:5px;
@@ -30,7 +53,11 @@ padding:10px;
 border:none;
 font-size:14px;
 }
-textarea{height:80px;}
+textarea{
+height:80px;
+}
+
+/* زر الإرسال */
 button{
 margin-top:25px;
 padding:15px;
@@ -44,13 +71,18 @@ cursor:pointer;
 }
 </style>
 </head>
+
 <body>
 
 <form>
+
+<div class="logo">
+<img src="logo.png" alt="الشعار">
 <h2>نموذج تقديم كلية الضباط</h2>
+</div>
 
 <label>1- يوزرك في ديسكورد</label>
-<input type="text" placeholder="مثال: User#1234">
+<input placeholder="مثال: User#1234">
 
 <label>2- عرف عن نفسك</label><textarea></textarea>
 <label>3- كيف توازن بين الطاعة العسكرية واتخاذ القرار الصحيح</label><textarea></textarea>
@@ -68,11 +100,11 @@ cursor:pointer;
 <label>15- عطني تكتيك عسكري</label><textarea></textarea>
 <label>16- وش معنى الانضباط العسكري</label><textarea></textarea>
 <label>17- إذا جاك أمر يخالف الأنظمة وش تسوي</label><textarea></textarea>
-<label>18- سبب تقديمك لكلية الضباط</label><textarea></textarea>
-<label>19- وش تعرف عن كلية الضباط</label><textarea></textarea>
-<label>20- وش معنى شرف الخدمة</label><textarea></textarea>
+<label>18- وش تعرف عن كلية الضباط</label><textarea></textarea>
+<label>19- وش معنى شرف الخدمة</label><textarea></textarea>
 
 <button>إرسال الطلب</button>
+
 </form>
 
 </body>
